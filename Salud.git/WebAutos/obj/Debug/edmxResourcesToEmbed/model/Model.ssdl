@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AutomovilModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="AutomovilModelStoreContainer">
+    <EntitySet Name="sysdiagrams" EntityType="AutomovilModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <!--Se encontraron errores durante la generación:
+      advertencia 6013: La tabla o vista 'Automovil.dbo.Automovil' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+      
+      <EntityType Name="Automovil">
+        <Property Name="Marca" Type="nchar" MaxLength="20" />
+        <Property Name="Modelo" Type="nchar" MaxLength="10" />
+        <Property Name="Chasis" Type="nchar" MaxLength="10" />
+        <Property Name="Color" Type="nchar" MaxLength="10" />
+        <Property Name="Tipo" Type="nchar" MaxLength="10" />
+      </EntityType>-->
+</Schema>

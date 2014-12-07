@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AutomovilModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="AutomovilModelStoreContainer">
+    <EntitySet Name="Automovil" EntityType="AutomovilModel.Store.Automovil" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="Automovil">
+    <Key>
+      <PropertyRef Name="id_vehiculo" />
+    </Key>
+    <Property Name="Marca" Type="nchar" Nullable="false" MaxLength="50" />
+    <Property Name="Modelo" Type="nchar" Nullable="false" MaxLength="50" />
+    <Property Name="Chasis" Type="nchar" Nullable="false" MaxLength="50" />
+    <Property Name="Color" Type="nchar" Nullable="false" MaxLength="50" />
+    <Property Name="Tipo" Type="nchar" Nullable="false" MaxLength="50" />
+    <Property Name="id_vehiculo" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+</Schema>
