@@ -1,9 +1,0 @@
-crear tabla producto con idproducto,nombre,precio
-
-validar id
-si existe mostrar los dos datos y deshablitar el boton grabar
-si no existe habilitar el boton grabar y grabe el nuevo registro
-
-boton listar hacer un list mostrando todos los registros almacenados en la base de datos
-
-cada fila debe salir en color diferente con css ejemplo una rojo,azul,rojo, azul etc...
