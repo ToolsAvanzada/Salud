@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="8b9c510efa9f444fa4b9875bc12ced41" Name="Diagrama1">
+        <EntityTypeShape EntityType="SaludModel.TB_Atencion" Width="1.5" PointX="3" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="SaludModel.TB_Box" Width="1.5" PointX="0.75" PointY="13.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SaludModel.TB_Comuna" Width="1.5" PointX="3.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SaludModel.TB_Condicion" Width="1.5" PointX="6" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SaludModel.TB_DatosMedicos" Width="1.5" PointX="8.25" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SaludModel.TB_Diagnostico" Width="1.5" PointX="6" PointY="15.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SaludModel.TB_Especialidad" Width="1.5" PointX="0.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SaludModel.TB_Fpago" Width="1.5" PointX="3.75" PointY="16" IsExpanded="true" />
+        <EntityTypeShape EntityType="SaludModel.TB_Lugar" Width="1.5" PointX="0.75" PointY="20" IsExpanded="true" />
+        <EntityTypeShape EntityType="SaludModel.TB_MedioLlegada" Width="1.5" PointX="0.75" PointY="23" IsExpanded="true" />
+        <EntityTypeShape EntityType="SaludModel.TB_Motivo" Width="1.5" PointX="0.75" PointY="25.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SaludModel.TB_MotivoAnula" Width="1.5" PointX="0.75" PointY="29.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SaludModel.TB_Paciente" Width="1.5" PointX="6" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SaludModel.TB_Profesional" Width="1.5" PointX="0.75" PointY="32.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SaludModel.TB_Servicio" Width="1.5" PointX="0.75" PointY="41.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SaludModel.TB_Signos" Width="1.5" PointX="0.75" PointY="45.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SaludModel.TB_Tipo" Width="1.5" PointX="1.5" PointY="38.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SaludModel.TB_Usuario" Width="1.5" PointX="0.75" PointY="8.875" IsExpanded="true" />
+        <AssociationConnector Association="SaludModel.FK_TB_Atencion_TB_Box" ManuallyRouted="false" />
+        <AssociationConnector Association="SaludModel.FK_TB_Atencion_TB_Especialidad" ManuallyRouted="false" />
+        <AssociationConnector Association="SaludModel.FK_TB_Atencion_TB_Especialidad1" ManuallyRouted="false" />
+        <AssociationConnector Association="SaludModel.FK_TB_Atencion_TB_Lugar" ManuallyRouted="false" />
+        <AssociationConnector Association="SaludModel.FK_TB_Atencion_TB_MedioLlegada" ManuallyRouted="false" />
+        <AssociationConnector Association="SaludModel.FK_TB_Atencion_TB_Motivo" ManuallyRouted="false" />
+        <AssociationConnector Association="SaludModel.FK_TB_Atencion_TB_MotivoAnula" ManuallyRouted="false" />
+        <AssociationConnector Association="SaludModel.FK_TB_Atencion_TB_Paciente" ManuallyRouted="false" />
+        <AssociationConnector Association="SaludModel.FK_TB_Atencion_TB_Profesional" ManuallyRouted="false" />
+        <AssociationConnector Association="SaludModel.FK_TB_Atencion_TB_Profesional1" ManuallyRouted="false" />
+        <AssociationConnector Association="SaludModel.FK_TB_Atencion_TB_Servicio" ManuallyRouted="false" />
+        <AssociationConnector Association="SaludModel.FK_TB_Atencion_TB_Servicio1" ManuallyRouted="false" />
+        <AssociationConnector Association="SaludModel.FK_TB_Atencion_TB_Signos" ManuallyRouted="false" />
+        <AssociationConnector Association="SaludModel.FK_TB_Atencion_TB_Usuario1" ManuallyRouted="false" />
+        <AssociationConnector Association="SaludModel.FK_TB_Atencion_TB_Usuario2" ManuallyRouted="false" />
+        <AssociationConnector Association="SaludModel.FK_TB_DatosMedicos_TB_Atencion" ManuallyRouted="false" />
+        <AssociationConnector Association="SaludModel.FK_TB_DatosMedicos_TB_Box" ManuallyRouted="false" />
+        <AssociationConnector Association="SaludModel.FK_TB_Paciente_TB_Comuna" ManuallyRouted="false" />
+        <AssociationConnector Association="SaludModel.FK_TB_DatosMedicos_TB_Condicion" ManuallyRouted="false" />
+        <AssociationConnector Association="SaludModel.FK_TB_DatosMedicos_TB_Condicion1" ManuallyRouted="false" />
+        <AssociationConnector Association="SaludModel.FK_TB_DatosMedicos_TB_Diagnostico" ManuallyRouted="false" />
+        <AssociationConnector Association="SaludModel.FK_TB_DatosMedicos_TB_Diagnostico1" ManuallyRouted="false" />
+        <AssociationConnector Association="SaludModel.FK_TB_DatosMedicos_TB_Paciente" ManuallyRouted="false" />
+        <AssociationConnector Association="SaludModel.FK_TB_DatosMedicos_TB_Profesional" ManuallyRouted="false" />
+        <AssociationConnector Association="SaludModel.FK_TB_DatosMedicos_TB_Servicio" ManuallyRouted="false" />
+        <AssociationConnector Association="SaludModel.FK_TB_DatosMedicos_TB_Servicio1" ManuallyRouted="false" />
+        <AssociationConnector Association="SaludModel.FK_TB_DatosMedicos_TB_Usuario" ManuallyRouted="false" />
+        <AssociationConnector Association="SaludModel.FK_TB_DatosMedicos_TB_Usuario1" ManuallyRouted="false" />
+        <AssociationConnector Association="SaludModel.FK_TB_Paciente_TB_Fpago" ManuallyRouted="false" />
+        <AssociationConnector Association="SaludModel.FK_TB_Paciente_TB_Usuario" ManuallyRouted="false" />
+        <AssociationConnector Association="SaludModel.FK_TB_Paciente_TB_Usuario1" ManuallyRouted="false" />
+        <AssociationConnector Association="SaludModel.FK_TB_Profesional_TB_Tipo" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

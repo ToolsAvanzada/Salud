@@ -1,0 +1,200 @@
+﻿@model Salud.Models.TB_Atencion
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>TB_Atencion</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.codigo)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.codigo)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.cp)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.cp)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.fp)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.fp)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ndau)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ndau)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.atensol)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.atensol)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.servsol)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.servsol)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.actisol)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.actisol)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.profsol)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.profsol)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.fechalleg)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.fechalleg)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.fechaper)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.fechaper)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.motivo)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.motivo)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.medio)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.medio)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.lugar)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.lugar)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ateneje)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ateneje)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.serveje)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.serveje)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.actieje)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.actieje)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.profeje)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.profeje)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.comentario)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.comentario)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.anulado)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.anulado)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.motanul)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.motanul)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.cierre)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.cierre)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.uscrea)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.uscrea)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.fcrea)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.fcrea)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.usmod)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.usmod)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.fmod)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.fmod)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.consultorio)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.consultorio)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

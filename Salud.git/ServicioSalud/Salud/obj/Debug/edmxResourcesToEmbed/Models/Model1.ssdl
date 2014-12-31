@@ -1,0 +1,811 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SaludModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="SaludModelStoreContainer">
+    <EntitySet Name="TB_Atencion" EntityType="SaludModel.Store.TB_Atencion" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TB_Box" EntityType="SaludModel.Store.TB_Box" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TB_Comuna" EntityType="SaludModel.Store.TB_Comuna" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TB_Condicion" EntityType="SaludModel.Store.TB_Condicion" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TB_DatosMedicos" EntityType="SaludModel.Store.TB_DatosMedicos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TB_Diagnostico" EntityType="SaludModel.Store.TB_Diagnostico" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TB_Especialidad" EntityType="SaludModel.Store.TB_Especialidad" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TB_Fpago" EntityType="SaludModel.Store.TB_Fpago" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TB_Lugar" EntityType="SaludModel.Store.TB_Lugar" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TB_MedioLlegada" EntityType="SaludModel.Store.TB_MedioLlegada" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TB_Motivo" EntityType="SaludModel.Store.TB_Motivo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TB_MotivoAnula" EntityType="SaludModel.Store.TB_MotivoAnula" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TB_Paciente" EntityType="SaludModel.Store.TB_Paciente" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TB_Profesional" EntityType="SaludModel.Store.TB_Profesional" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TB_Servicio" EntityType="SaludModel.Store.TB_Servicio" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TB_Signos" EntityType="SaludModel.Store.TB_Signos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TB_Tipo" EntityType="SaludModel.Store.TB_Tipo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TB_Usuario" EntityType="SaludModel.Store.TB_Usuario" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_TB_Atencion_TB_Box" Association="SaludModel.Store.FK_TB_Atencion_TB_Box">
+      <End Role="TB_Box" EntitySet="TB_Box" />
+      <End Role="TB_Atencion" EntitySet="TB_Atencion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_Atencion_TB_Especialidad" Association="SaludModel.Store.FK_TB_Atencion_TB_Especialidad">
+      <End Role="TB_Especialidad" EntitySet="TB_Especialidad" />
+      <End Role="TB_Atencion" EntitySet="TB_Atencion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_Atencion_TB_Especialidad1" Association="SaludModel.Store.FK_TB_Atencion_TB_Especialidad1">
+      <End Role="TB_Especialidad" EntitySet="TB_Especialidad" />
+      <End Role="TB_Atencion" EntitySet="TB_Atencion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_Atencion_TB_Lugar" Association="SaludModel.Store.FK_TB_Atencion_TB_Lugar">
+      <End Role="TB_Lugar" EntitySet="TB_Lugar" />
+      <End Role="TB_Atencion" EntitySet="TB_Atencion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_Atencion_TB_MedioLlegada" Association="SaludModel.Store.FK_TB_Atencion_TB_MedioLlegada">
+      <End Role="TB_MedioLlegada" EntitySet="TB_MedioLlegada" />
+      <End Role="TB_Atencion" EntitySet="TB_Atencion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_Atencion_TB_Motivo" Association="SaludModel.Store.FK_TB_Atencion_TB_Motivo">
+      <End Role="TB_Motivo" EntitySet="TB_Motivo" />
+      <End Role="TB_Atencion" EntitySet="TB_Atencion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_Atencion_TB_MotivoAnula" Association="SaludModel.Store.FK_TB_Atencion_TB_MotivoAnula">
+      <End Role="TB_MotivoAnula" EntitySet="TB_MotivoAnula" />
+      <End Role="TB_Atencion" EntitySet="TB_Atencion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_Atencion_TB_Paciente" Association="SaludModel.Store.FK_TB_Atencion_TB_Paciente">
+      <End Role="TB_Paciente" EntitySet="TB_Paciente" />
+      <End Role="TB_Atencion" EntitySet="TB_Atencion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_Atencion_TB_Profesional" Association="SaludModel.Store.FK_TB_Atencion_TB_Profesional">
+      <End Role="TB_Profesional" EntitySet="TB_Profesional" />
+      <End Role="TB_Atencion" EntitySet="TB_Atencion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_Atencion_TB_Profesional1" Association="SaludModel.Store.FK_TB_Atencion_TB_Profesional1">
+      <End Role="TB_Profesional" EntitySet="TB_Profesional" />
+      <End Role="TB_Atencion" EntitySet="TB_Atencion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_Atencion_TB_Servicio" Association="SaludModel.Store.FK_TB_Atencion_TB_Servicio">
+      <End Role="TB_Servicio" EntitySet="TB_Servicio" />
+      <End Role="TB_Atencion" EntitySet="TB_Atencion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_Atencion_TB_Servicio1" Association="SaludModel.Store.FK_TB_Atencion_TB_Servicio1">
+      <End Role="TB_Servicio" EntitySet="TB_Servicio" />
+      <End Role="TB_Atencion" EntitySet="TB_Atencion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_Atencion_TB_Signos" Association="SaludModel.Store.FK_TB_Atencion_TB_Signos">
+      <End Role="TB_Signos" EntitySet="TB_Signos" />
+      <End Role="TB_Atencion" EntitySet="TB_Atencion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_Atencion_TB_Usuario1" Association="SaludModel.Store.FK_TB_Atencion_TB_Usuario1">
+      <End Role="TB_Usuario" EntitySet="TB_Usuario" />
+      <End Role="TB_Atencion" EntitySet="TB_Atencion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_Atencion_TB_Usuario2" Association="SaludModel.Store.FK_TB_Atencion_TB_Usuario2">
+      <End Role="TB_Usuario" EntitySet="TB_Usuario" />
+      <End Role="TB_Atencion" EntitySet="TB_Atencion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_DatosMedicos_TB_Atencion" Association="SaludModel.Store.FK_TB_DatosMedicos_TB_Atencion">
+      <End Role="TB_Atencion" EntitySet="TB_Atencion" />
+      <End Role="TB_DatosMedicos" EntitySet="TB_DatosMedicos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_DatosMedicos_TB_Box" Association="SaludModel.Store.FK_TB_DatosMedicos_TB_Box">
+      <End Role="TB_Box" EntitySet="TB_Box" />
+      <End Role="TB_DatosMedicos" EntitySet="TB_DatosMedicos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_DatosMedicos_TB_Condicion" Association="SaludModel.Store.FK_TB_DatosMedicos_TB_Condicion">
+      <End Role="TB_Condicion" EntitySet="TB_Condicion" />
+      <End Role="TB_DatosMedicos" EntitySet="TB_DatosMedicos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_DatosMedicos_TB_Condicion1" Association="SaludModel.Store.FK_TB_DatosMedicos_TB_Condicion1">
+      <End Role="TB_Condicion" EntitySet="TB_Condicion" />
+      <End Role="TB_DatosMedicos" EntitySet="TB_DatosMedicos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_DatosMedicos_TB_Diagnostico" Association="SaludModel.Store.FK_TB_DatosMedicos_TB_Diagnostico">
+      <End Role="TB_Diagnostico" EntitySet="TB_Diagnostico" />
+      <End Role="TB_DatosMedicos" EntitySet="TB_DatosMedicos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_DatosMedicos_TB_Diagnostico1" Association="SaludModel.Store.FK_TB_DatosMedicos_TB_Diagnostico1">
+      <End Role="TB_Diagnostico" EntitySet="TB_Diagnostico" />
+      <End Role="TB_DatosMedicos" EntitySet="TB_DatosMedicos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_DatosMedicos_TB_Paciente" Association="SaludModel.Store.FK_TB_DatosMedicos_TB_Paciente">
+      <End Role="TB_Paciente" EntitySet="TB_Paciente" />
+      <End Role="TB_DatosMedicos" EntitySet="TB_DatosMedicos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_DatosMedicos_TB_Profesional" Association="SaludModel.Store.FK_TB_DatosMedicos_TB_Profesional">
+      <End Role="TB_Profesional" EntitySet="TB_Profesional" />
+      <End Role="TB_DatosMedicos" EntitySet="TB_DatosMedicos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_DatosMedicos_TB_Servicio" Association="SaludModel.Store.FK_TB_DatosMedicos_TB_Servicio">
+      <End Role="TB_Servicio" EntitySet="TB_Servicio" />
+      <End Role="TB_DatosMedicos" EntitySet="TB_DatosMedicos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_DatosMedicos_TB_Servicio1" Association="SaludModel.Store.FK_TB_DatosMedicos_TB_Servicio1">
+      <End Role="TB_Servicio" EntitySet="TB_Servicio" />
+      <End Role="TB_DatosMedicos" EntitySet="TB_DatosMedicos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_DatosMedicos_TB_Usuario" Association="SaludModel.Store.FK_TB_DatosMedicos_TB_Usuario">
+      <End Role="TB_Usuario" EntitySet="TB_Usuario" />
+      <End Role="TB_DatosMedicos" EntitySet="TB_DatosMedicos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_DatosMedicos_TB_Usuario1" Association="SaludModel.Store.FK_TB_DatosMedicos_TB_Usuario1">
+      <End Role="TB_Usuario" EntitySet="TB_Usuario" />
+      <End Role="TB_DatosMedicos" EntitySet="TB_DatosMedicos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_Paciente_TB_Comuna" Association="SaludModel.Store.FK_TB_Paciente_TB_Comuna">
+      <End Role="TB_Comuna" EntitySet="TB_Comuna" />
+      <End Role="TB_Paciente" EntitySet="TB_Paciente" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_Paciente_TB_Fpago" Association="SaludModel.Store.FK_TB_Paciente_TB_Fpago">
+      <End Role="TB_Fpago" EntitySet="TB_Fpago" />
+      <End Role="TB_Paciente" EntitySet="TB_Paciente" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_Paciente_TB_Usuario" Association="SaludModel.Store.FK_TB_Paciente_TB_Usuario">
+      <End Role="TB_Usuario" EntitySet="TB_Usuario" />
+      <End Role="TB_Paciente" EntitySet="TB_Paciente" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_Paciente_TB_Usuario1" Association="SaludModel.Store.FK_TB_Paciente_TB_Usuario1">
+      <End Role="TB_Usuario" EntitySet="TB_Usuario" />
+      <End Role="TB_Paciente" EntitySet="TB_Paciente" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_Profesional_TB_Tipo" Association="SaludModel.Store.FK_TB_Profesional_TB_Tipo">
+      <End Role="TB_Tipo" EntitySet="TB_Tipo" />
+      <End Role="TB_Profesional" EntitySet="TB_Profesional" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="TB_Atencion">
+    <Key>
+      <PropertyRef Name="codigo" />
+    </Key>
+    <Property Name="codigo" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="cp" Type="int" Nullable="false" />
+    <Property Name="fp" Type="int" Nullable="false" />
+    <Property Name="ndau" Type="int" Nullable="false" />
+    <Property Name="atensol" Type="smallint" Nullable="false" />
+    <Property Name="servsol" Type="int" Nullable="false" />
+    <Property Name="actisol" Type="int" Nullable="false" />
+    <Property Name="profsol" Type="int" Nullable="false" />
+    <Property Name="fechalleg" Type="datetime" Nullable="false" />
+    <Property Name="fechaper" Type="datetime" />
+    <Property Name="motivo" Type="int" Nullable="false" />
+    <Property Name="medio" Type="int" />
+    <Property Name="lugar" Type="int" />
+    <Property Name="ateneje" Type="smallint" Nullable="false" />
+    <Property Name="serveje" Type="int" Nullable="false" />
+    <Property Name="actieje" Type="int" Nullable="false" />
+    <Property Name="profeje" Type="int" Nullable="false" />
+    <Property Name="comentario" Type="varchar" MaxLength="60" />
+    <Property Name="anulado" Type="smallint" Nullable="false" />
+    <Property Name="motanul" Type="int" />
+    <Property Name="cierre" Type="datetime" />
+    <Property Name="uscrea" Type="int" Nullable="false" />
+    <Property Name="fcrea" Type="datetime" Nullable="false" />
+    <Property Name="usmod" Type="int" Nullable="false" />
+    <Property Name="fmod" Type="datetime" Nullable="false" />
+    <Property Name="consultorio" Type="int" />
+  </EntityType>
+  <EntityType Name="TB_Box">
+    <Key>
+      <PropertyRef Name="codigo" />
+    </Key>
+    <Property Name="codigo" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="box" Type="varchar" MaxLength="5" />
+    <Property Name="camilla" Type="varchar" MaxLength="2" />
+    <Property Name="estado" Type="int" />
+    <Property Name="dau" Type="int" />
+  </EntityType>
+  <EntityType Name="TB_Comuna">
+    <Key>
+      <PropertyRef Name="codigo" />
+    </Key>
+    <Property Name="codigo" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="codexterno" Type="int" Nullable="false" />
+    <Property Name="codusuario" Type="char" Nullable="false" MaxLength="5" />
+    <Property Name="denominacion" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="descripcion" Type="varchar" MaxLength="50" />
+    <Property Name="tipo" Type="smallint" Nullable="false" />
+    <Property Name="padre" Type="int" />
+    <Property Name="estado" Type="int" />
+  </EntityType>
+  <EntityType Name="TB_Condicion">
+    <Key>
+      <PropertyRef Name="codigo" />
+    </Key>
+    <Property Name="codigo" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="codusuario" Type="varchar" Nullable="false" MaxLength="5" />
+    <Property Name="denominacion" Type="varchar" Nullable="false" MaxLength="40" />
+    <Property Name="descripcion" Type="varchar" MaxLength="40" />
+    <Property Name="estado" Type="int" />
+  </EntityType>
+  <EntityType Name="TB_DatosMedicos">
+    <Key>
+      <PropertyRef Name="codigo" />
+    </Key>
+    <Property Name="codigo" Type="int" Nullable="false" />
+    <Property Name="nrodau" Type="int" Nullable="false" />
+    <Property Name="cp" Type="int" />
+    <Property Name="atencion" Type="datetime" Nullable="false" />
+    <Property Name="coning1" Type="int" Nullable="false" />
+    <Property Name="coning2" Type="int" />
+    <Property Name="pronostico" Type="smallint" Nullable="false" />
+    <Property Name="alcoholemia" Type="smallint" Nullable="false" />
+    <Property Name="fechaalc" Type="datetime" />
+    <Property Name="datoalc" Type="smallint" />
+    <Property Name="destino" Type="smallint" Nullable="false" />
+    <Property Name="servdest" Type="int" />
+    <Property Name="ambulancia" Type="smallint" Nullable="false" />
+    <Property Name="carabinero" Type="smallint" />
+    <Property Name="placacarab" Type="char" MaxLength="5" />
+    <Property Name="policlinico" Type="int" />
+    <Property Name="diagpos1" Type="int" />
+    <Property Name="diagpos2" Type="int" />
+    <Property Name="perstratante" Type="int" />
+    <Property Name="uscrea" Type="int" Nullable="false" />
+    <Property Name="fcrea" Type="datetime" Nullable="false" />
+    <Property Name="usmod" Type="int" Nullable="false" />
+    <Property Name="fmod" Type="datetime" Nullable="false" />
+    <Property Name="fsigno" Type="datetime" />
+    <Property Name="color" Type="smallint" />
+    <Property Name="riesgo" Type="smallint" />
+    <Property Name="indicaciones" Type="varchar" MaxLength="250" />
+    <Property Name="box" Type="int" />
+  </EntityType>
+  <EntityType Name="TB_Diagnostico">
+    <Key>
+      <PropertyRef Name="coddiag" />
+    </Key>
+    <Property Name="coddiag" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="codusuario" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="denominacion" Type="varchar" Nullable="false" MaxLength="60" />
+    <Property Name="descripcion" Type="varchar" MaxLength="60" />
+    <Property Name="padre" Type="int" />
+    <Property Name="agrupacion" Type="smallint" Nullable="false" />
+    <Property Name="activo" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_Especialidad">
+    <Key>
+      <PropertyRef Name="codactiv" />
+    </Key>
+    <Property Name="codactiv" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="codusuario" Type="varchar" Nullable="false" MaxLength="5" />
+    <Property Name="padre" Type="int" />
+    <Property Name="denominacion" Type="varchar" Nullable="false" MaxLength="40" />
+    <Property Name="descripcion" Type="varchar" MaxLength="40" />
+    <Property Name="activo" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_Fpago">
+    <Key>
+      <PropertyRef Name="codigo" />
+    </Key>
+    <Property Name="codigo" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="codusuario" Type="varchar" Nullable="false" MaxLength="5" />
+    <Property Name="denominacion" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="tipo" Type="smallint" Nullable="false" />
+    <Property Name="pagopac" Type="int" Nullable="false" />
+    <Property Name="pagopersona" Type="int" Nullable="false" />
+    <Property Name="estado" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_Lugar">
+    <Key>
+      <PropertyRef Name="codigo" />
+    </Key>
+    <Property Name="codigo" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="codusuario" Type="char" Nullable="false" MaxLength="5" />
+    <Property Name="denominacion" Type="varchar" Nullable="false" MaxLength="40" />
+    <Property Name="descripcion" Type="varchar" MaxLength="40" />
+    <Property Name="estado" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_MedioLlegada">
+    <Key>
+      <PropertyRef Name="codigo" />
+    </Key>
+    <Property Name="codigo" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="codusuario" Type="varchar" Nullable="false" MaxLength="5" />
+    <Property Name="denominacion" Type="varchar" Nullable="false" MaxLength="40" />
+    <Property Name="descripcion" Type="varchar" MaxLength="40" />
+    <Property Name="estado" Type="int" />
+  </EntityType>
+  <EntityType Name="TB_Motivo">
+    <Key>
+      <PropertyRef Name="codigo" />
+    </Key>
+    <Property Name="codigo" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="codusuario" Type="varchar" Nullable="false" MaxLength="5" />
+    <Property Name="denominacion" Type="varchar" Nullable="false" MaxLength="40" />
+    <Property Name="descripcion" Type="varchar" MaxLength="40" />
+    <Property Name="regadic" Type="smallint" Nullable="false" />
+    <Property Name="regpart" Type="smallint" />
+    <Property Name="estado" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_MotivoAnula">
+    <Key>
+      <PropertyRef Name="codigo" />
+    </Key>
+    <Property Name="codigo" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="codusuario" Type="varchar" Nullable="false" MaxLength="5" />
+    <Property Name="denominacion" Type="varchar" Nullable="false" MaxLength="40" />
+    <Property Name="descripcion" Type="varchar" MaxLength="40" />
+    <Property Name="estado" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_Paciente">
+    <Key>
+      <PropertyRef Name="codpacie" />
+    </Key>
+    <Property Name="codpacie" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="fechacrea" Type="datetime" Nullable="false" />
+    <Property Name="estado" Type="smallint" Nullable="false" />
+    <Property Name="rut" Type="int" />
+    <Property Name="digiver" Type="char" MaxLength="1" />
+    <Property Name="hc" Type="char" MaxLength="10" />
+    <Property Name="apellpat" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="apellmat" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="nombres" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="fechanac" Type="datetime" />
+    <Property Name="fechafall" Type="datetime" />
+    <Property Name="sexo" Type="smallint" Nullable="false" />
+    <Property Name="estcivil" Type="smallint" Nullable="false" />
+    <Property Name="formapago" Type="int" Nullable="false" />
+    <Property Name="credencial" Type="char" MaxLength="10" />
+    <Property Name="vigencia" Type="datetime" />
+    <Property Name="domicilio" Type="varchar" Nullable="false" MaxLength="60" />
+    <Property Name="comuna" Type="int" />
+    <Property Name="telefono" Type="varchar" MaxLength="20" />
+    <Property Name="etnia" Type="smallint" />
+    <Property Name="contacto" Type="varchar" MaxLength="50" />
+    <Property Name="nombrepad" Type="varchar" MaxLength="30" />
+    <Property Name="nombremad" Type="varchar" MaxLength="30" />
+    <Property Name="observacion" Type="varchar" MaxLength="50" />
+    <Property Name="usmod" Type="int" Nullable="false" />
+    <Property Name="fmod" Type="datetime" Nullable="false" />
+    <Property Name="uspago" Type="int" Nullable="false" />
+    <Property Name="fpago" Type="datetime" Nullable="false" />
+    <Property Name="nacionalidad" Type="char" MaxLength="3" />
+  </EntityType>
+  <EntityType Name="TB_Profesional">
+    <Key>
+      <PropertyRef Name="codigo" />
+    </Key>
+    <Property Name="codigo" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="rut" Type="int" />
+    <Property Name="codusuario" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="digitover" Type="varchar" MaxLength="1" />
+    <Property Name="apellpat" Type="varchar" MaxLength="30" />
+    <Property Name="apellmat" Type="varchar" MaxLength="30" />
+    <Property Name="nombres" Type="varchar" MaxLength="20" />
+    <Property Name="nombre2" Type="varchar" MaxLength="20" />
+    <Property Name="tipo" Type="int" Nullable="false" />
+    <Property Name="direccion" Type="varchar" MaxLength="60" />
+    <Property Name="comuna" Type="int" />
+    <Property Name="fono" Type="varchar" MaxLength="20" />
+    <Property Name="estado" Type="smallint" Nullable="false" />
+    <Property Name="fecha" Type="datetime" Nullable="false" />
+    <Property Name="observacion" Type="int" />
+  </EntityType>
+  <EntityType Name="TB_Servicio">
+    <Key>
+      <PropertyRef Name="codservicio" />
+    </Key>
+    <Property Name="codservicio" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="codusuario" Type="varchar" Nullable="false" MaxLength="5" />
+    <Property Name="padre" Type="int" />
+    <Property Name="denominacion" Type="varchar" Nullable="false" MaxLength="40" />
+    <Property Name="descripcion" Type="varchar" MaxLength="40" />
+    <Property Name="servinst" Type="smallint" Nullable="false" />
+    <Property Name="instexte" Type="int" />
+    <Property Name="lugar" Type="int" Nullable="false" />
+    <Property Name="activo" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_Signos">
+    <Key>
+      <PropertyRef Name="Codigo" />
+    </Key>
+    <Property Name="Codigo" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="nrodau" Type="int" Nullable="false" />
+    <Property Name="fechasigno" Type="datetime" Nullable="false" />
+    <Property Name="presion" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="tempaxilar" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="temprectal" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="pulso" Type="varchar" Nullable="false" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="TB_Tipo">
+    <Key>
+      <PropertyRef Name="codigo" />
+    </Key>
+    <Property Name="codigo" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="codusuario" Type="nvarchar" Nullable="false" MaxLength="5" />
+    <Property Name="denominacion" Type="varchar" Nullable="false" MaxLength="40" />
+    <Property Name="descripcion" Type="varchar" MaxLength="40" />
+    <Property Name="super" Type="int" Nullable="false" />
+    <Property Name="estado" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_Usuario">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="usr" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="nombre" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="pass" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="tipo" Type="int" Nullable="false" />
+    <Property Name="estado" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_TB_Atencion_TB_Box">
+    <End Role="TB_Box" Type="SaludModel.Store.TB_Box" Multiplicity="1" />
+    <End Role="TB_Atencion" Type="SaludModel.Store.TB_Atencion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_Box">
+        <PropertyRef Name="codigo" />
+      </Principal>
+      <Dependent Role="TB_Atencion">
+        <PropertyRef Name="ndau" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_Atencion_TB_Especialidad">
+    <End Role="TB_Especialidad" Type="SaludModel.Store.TB_Especialidad" Multiplicity="1" />
+    <End Role="TB_Atencion" Type="SaludModel.Store.TB_Atencion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_Especialidad">
+        <PropertyRef Name="codactiv" />
+      </Principal>
+      <Dependent Role="TB_Atencion">
+        <PropertyRef Name="actisol" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_Atencion_TB_Especialidad1">
+    <End Role="TB_Especialidad" Type="SaludModel.Store.TB_Especialidad" Multiplicity="1" />
+    <End Role="TB_Atencion" Type="SaludModel.Store.TB_Atencion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_Especialidad">
+        <PropertyRef Name="codactiv" />
+      </Principal>
+      <Dependent Role="TB_Atencion">
+        <PropertyRef Name="actieje" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_Atencion_TB_Lugar">
+    <End Role="TB_Lugar" Type="SaludModel.Store.TB_Lugar" Multiplicity="0..1" />
+    <End Role="TB_Atencion" Type="SaludModel.Store.TB_Atencion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_Lugar">
+        <PropertyRef Name="codigo" />
+      </Principal>
+      <Dependent Role="TB_Atencion">
+        <PropertyRef Name="lugar" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_Atencion_TB_MedioLlegada">
+    <End Role="TB_MedioLlegada" Type="SaludModel.Store.TB_MedioLlegada" Multiplicity="0..1" />
+    <End Role="TB_Atencion" Type="SaludModel.Store.TB_Atencion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_MedioLlegada">
+        <PropertyRef Name="codigo" />
+      </Principal>
+      <Dependent Role="TB_Atencion">
+        <PropertyRef Name="medio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_Atencion_TB_Motivo">
+    <End Role="TB_Motivo" Type="SaludModel.Store.TB_Motivo" Multiplicity="1" />
+    <End Role="TB_Atencion" Type="SaludModel.Store.TB_Atencion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_Motivo">
+        <PropertyRef Name="codigo" />
+      </Principal>
+      <Dependent Role="TB_Atencion">
+        <PropertyRef Name="motivo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_Atencion_TB_MotivoAnula">
+    <End Role="TB_MotivoAnula" Type="SaludModel.Store.TB_MotivoAnula" Multiplicity="0..1" />
+    <End Role="TB_Atencion" Type="SaludModel.Store.TB_Atencion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_MotivoAnula">
+        <PropertyRef Name="codigo" />
+      </Principal>
+      <Dependent Role="TB_Atencion">
+        <PropertyRef Name="motanul" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_Atencion_TB_Paciente">
+    <End Role="TB_Paciente" Type="SaludModel.Store.TB_Paciente" Multiplicity="1" />
+    <End Role="TB_Atencion" Type="SaludModel.Store.TB_Atencion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_Paciente">
+        <PropertyRef Name="codpacie" />
+      </Principal>
+      <Dependent Role="TB_Atencion">
+        <PropertyRef Name="cp" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_Atencion_TB_Profesional">
+    <End Role="TB_Profesional" Type="SaludModel.Store.TB_Profesional" Multiplicity="1" />
+    <End Role="TB_Atencion" Type="SaludModel.Store.TB_Atencion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_Profesional">
+        <PropertyRef Name="codigo" />
+      </Principal>
+      <Dependent Role="TB_Atencion">
+        <PropertyRef Name="profsol" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_Atencion_TB_Profesional1">
+    <End Role="TB_Profesional" Type="SaludModel.Store.TB_Profesional" Multiplicity="1" />
+    <End Role="TB_Atencion" Type="SaludModel.Store.TB_Atencion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_Profesional">
+        <PropertyRef Name="codigo" />
+      </Principal>
+      <Dependent Role="TB_Atencion">
+        <PropertyRef Name="profeje" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_Atencion_TB_Servicio">
+    <End Role="TB_Servicio" Type="SaludModel.Store.TB_Servicio" Multiplicity="1" />
+    <End Role="TB_Atencion" Type="SaludModel.Store.TB_Atencion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_Servicio">
+        <PropertyRef Name="codservicio" />
+      </Principal>
+      <Dependent Role="TB_Atencion">
+        <PropertyRef Name="servsol" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_Atencion_TB_Servicio1">
+    <End Role="TB_Servicio" Type="SaludModel.Store.TB_Servicio" Multiplicity="1" />
+    <End Role="TB_Atencion" Type="SaludModel.Store.TB_Atencion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_Servicio">
+        <PropertyRef Name="codservicio" />
+      </Principal>
+      <Dependent Role="TB_Atencion">
+        <PropertyRef Name="serveje" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_Atencion_TB_Signos">
+    <End Role="TB_Signos" Type="SaludModel.Store.TB_Signos" Multiplicity="1" />
+    <End Role="TB_Atencion" Type="SaludModel.Store.TB_Atencion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_Signos">
+        <PropertyRef Name="Codigo" />
+      </Principal>
+      <Dependent Role="TB_Atencion">
+        <PropertyRef Name="ndau" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_Atencion_TB_Usuario1">
+    <End Role="TB_Usuario" Type="SaludModel.Store.TB_Usuario" Multiplicity="1" />
+    <End Role="TB_Atencion" Type="SaludModel.Store.TB_Atencion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_Usuario">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="TB_Atencion">
+        <PropertyRef Name="uscrea" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_Atencion_TB_Usuario2">
+    <End Role="TB_Usuario" Type="SaludModel.Store.TB_Usuario" Multiplicity="1" />
+    <End Role="TB_Atencion" Type="SaludModel.Store.TB_Atencion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_Usuario">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="TB_Atencion">
+        <PropertyRef Name="usmod" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_DatosMedicos_TB_Atencion">
+    <End Role="TB_Atencion" Type="SaludModel.Store.TB_Atencion" Multiplicity="1" />
+    <End Role="TB_DatosMedicos" Type="SaludModel.Store.TB_DatosMedicos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_Atencion">
+        <PropertyRef Name="codigo" />
+      </Principal>
+      <Dependent Role="TB_DatosMedicos">
+        <PropertyRef Name="nrodau" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_DatosMedicos_TB_Box">
+    <End Role="TB_Box" Type="SaludModel.Store.TB_Box" Multiplicity="0..1" />
+    <End Role="TB_DatosMedicos" Type="SaludModel.Store.TB_DatosMedicos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_Box">
+        <PropertyRef Name="codigo" />
+      </Principal>
+      <Dependent Role="TB_DatosMedicos">
+        <PropertyRef Name="box" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_DatosMedicos_TB_Condicion">
+    <End Role="TB_Condicion" Type="SaludModel.Store.TB_Condicion" Multiplicity="1" />
+    <End Role="TB_DatosMedicos" Type="SaludModel.Store.TB_DatosMedicos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_Condicion">
+        <PropertyRef Name="codigo" />
+      </Principal>
+      <Dependent Role="TB_DatosMedicos">
+        <PropertyRef Name="coning1" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_DatosMedicos_TB_Condicion1">
+    <End Role="TB_Condicion" Type="SaludModel.Store.TB_Condicion" Multiplicity="0..1" />
+    <End Role="TB_DatosMedicos" Type="SaludModel.Store.TB_DatosMedicos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_Condicion">
+        <PropertyRef Name="codigo" />
+      </Principal>
+      <Dependent Role="TB_DatosMedicos">
+        <PropertyRef Name="coning2" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_DatosMedicos_TB_Diagnostico">
+    <End Role="TB_Diagnostico" Type="SaludModel.Store.TB_Diagnostico" Multiplicity="0..1" />
+    <End Role="TB_DatosMedicos" Type="SaludModel.Store.TB_DatosMedicos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_Diagnostico">
+        <PropertyRef Name="coddiag" />
+      </Principal>
+      <Dependent Role="TB_DatosMedicos">
+        <PropertyRef Name="diagpos1" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_DatosMedicos_TB_Diagnostico1">
+    <End Role="TB_Diagnostico" Type="SaludModel.Store.TB_Diagnostico" Multiplicity="0..1" />
+    <End Role="TB_DatosMedicos" Type="SaludModel.Store.TB_DatosMedicos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_Diagnostico">
+        <PropertyRef Name="coddiag" />
+      </Principal>
+      <Dependent Role="TB_DatosMedicos">
+        <PropertyRef Name="diagpos2" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_DatosMedicos_TB_Paciente">
+    <End Role="TB_Paciente" Type="SaludModel.Store.TB_Paciente" Multiplicity="0..1" />
+    <End Role="TB_DatosMedicos" Type="SaludModel.Store.TB_DatosMedicos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_Paciente">
+        <PropertyRef Name="codpacie" />
+      </Principal>
+      <Dependent Role="TB_DatosMedicos">
+        <PropertyRef Name="cp" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_DatosMedicos_TB_Profesional">
+    <End Role="TB_Profesional" Type="SaludModel.Store.TB_Profesional" Multiplicity="0..1" />
+    <End Role="TB_DatosMedicos" Type="SaludModel.Store.TB_DatosMedicos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_Profesional">
+        <PropertyRef Name="codigo" />
+      </Principal>
+      <Dependent Role="TB_DatosMedicos">
+        <PropertyRef Name="perstratante" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_DatosMedicos_TB_Servicio">
+    <End Role="TB_Servicio" Type="SaludModel.Store.TB_Servicio" Multiplicity="0..1" />
+    <End Role="TB_DatosMedicos" Type="SaludModel.Store.TB_DatosMedicos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_Servicio">
+        <PropertyRef Name="codservicio" />
+      </Principal>
+      <Dependent Role="TB_DatosMedicos">
+        <PropertyRef Name="servdest" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_DatosMedicos_TB_Servicio1">
+    <End Role="TB_Servicio" Type="SaludModel.Store.TB_Servicio" Multiplicity="0..1" />
+    <End Role="TB_DatosMedicos" Type="SaludModel.Store.TB_DatosMedicos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_Servicio">
+        <PropertyRef Name="codservicio" />
+      </Principal>
+      <Dependent Role="TB_DatosMedicos">
+        <PropertyRef Name="policlinico" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_DatosMedicos_TB_Usuario">
+    <End Role="TB_Usuario" Type="SaludModel.Store.TB_Usuario" Multiplicity="1" />
+    <End Role="TB_DatosMedicos" Type="SaludModel.Store.TB_DatosMedicos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_Usuario">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="TB_DatosMedicos">
+        <PropertyRef Name="uscrea" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_DatosMedicos_TB_Usuario1">
+    <End Role="TB_Usuario" Type="SaludModel.Store.TB_Usuario" Multiplicity="1" />
+    <End Role="TB_DatosMedicos" Type="SaludModel.Store.TB_DatosMedicos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_Usuario">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="TB_DatosMedicos">
+        <PropertyRef Name="usmod" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_Paciente_TB_Comuna">
+    <End Role="TB_Comuna" Type="SaludModel.Store.TB_Comuna" Multiplicity="0..1" />
+    <End Role="TB_Paciente" Type="SaludModel.Store.TB_Paciente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_Comuna">
+        <PropertyRef Name="codigo" />
+      </Principal>
+      <Dependent Role="TB_Paciente">
+        <PropertyRef Name="comuna" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_Paciente_TB_Fpago">
+    <End Role="TB_Fpago" Type="SaludModel.Store.TB_Fpago" Multiplicity="1" />
+    <End Role="TB_Paciente" Type="SaludModel.Store.TB_Paciente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_Fpago">
+        <PropertyRef Name="codigo" />
+      </Principal>
+      <Dependent Role="TB_Paciente">
+        <PropertyRef Name="formapago" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_Paciente_TB_Usuario">
+    <End Role="TB_Usuario" Type="SaludModel.Store.TB_Usuario" Multiplicity="1" />
+    <End Role="TB_Paciente" Type="SaludModel.Store.TB_Paciente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_Usuario">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="TB_Paciente">
+        <PropertyRef Name="usmod" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_Paciente_TB_Usuario1">
+    <End Role="TB_Usuario" Type="SaludModel.Store.TB_Usuario" Multiplicity="1" />
+    <End Role="TB_Paciente" Type="SaludModel.Store.TB_Paciente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_Usuario">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="TB_Paciente">
+        <PropertyRef Name="usmod" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_Profesional_TB_Tipo">
+    <End Role="TB_Tipo" Type="SaludModel.Store.TB_Tipo" Multiplicity="1" />
+    <End Role="TB_Profesional" Type="SaludModel.Store.TB_Profesional" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_Tipo">
+        <PropertyRef Name="codigo" />
+      </Principal>
+      <Dependent Role="TB_Profesional">
+        <PropertyRef Name="tipo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

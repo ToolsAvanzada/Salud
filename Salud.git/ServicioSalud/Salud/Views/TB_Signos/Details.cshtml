@@ -1,0 +1,64 @@
+﻿@model Salud.Models.TB_Signos
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>TB_Signos</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Codigo)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Codigo)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.nrodau)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.nrodau)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.fechasigno)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.fechasigno)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.presion)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.presion)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.tempaxilar)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.tempaxilar)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.temprectal)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.temprectal)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.pulso)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.pulso)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id=Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

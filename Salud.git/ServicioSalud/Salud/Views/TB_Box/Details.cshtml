@@ -1,0 +1,50 @@
+﻿@model Salud.Models.TB_Box
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>TB_Box</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.codigo)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.codigo)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.box)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.box)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.camilla)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.camilla)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.estado)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.estado)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.dau)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.dau)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id=Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

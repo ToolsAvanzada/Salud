@@ -1,0 +1,117 @@
+﻿@model IEnumerable<Salud.Models.TB_Profesional>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.codigo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.rut)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.codusuario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.digitover)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.apellpat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.apellmat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nombres)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nombre2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TB_Tipo.codusuario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.direccion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.comuna)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fono)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.estado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fecha)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.observacion)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.codigo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.rut)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.codusuario)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.digitover)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.apellpat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.apellmat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nombres)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nombre2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TB_Tipo.codusuario)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.direccion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.comuna)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fono)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.estado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fecha)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.observacion)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>

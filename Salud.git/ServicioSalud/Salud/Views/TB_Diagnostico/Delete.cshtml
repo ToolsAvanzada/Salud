@@ -1,0 +1,67 @@
+﻿@model Salud.Models.TB_Diagnostico
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>TB_Diagnostico</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.coddiag)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.coddiag)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.codusuario)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.codusuario)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.denominacion)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.denominacion)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.descripcion)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.descripcion)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.padre)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.padre)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.agrupacion)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.agrupacion)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.activo)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.activo)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

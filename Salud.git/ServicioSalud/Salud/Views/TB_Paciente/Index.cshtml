@@ -1,0 +1,201 @@
+﻿@model IEnumerable<Salud.Models.TB_Paciente>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.codpacie)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fechacrea)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.estado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.rut)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.digiver)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.hc)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.apellpat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.apellmat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nombres)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fechanac)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fechafall)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sexo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.estcivil)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.formapago)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.credencial)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.vigencia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.domicilio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.comuna)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.telefono)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.etnia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.contacto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nombrepad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nombremad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.observacion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.usmod)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fmod)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.uspago)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fpago)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nacionalidad)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.codpacie)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fechacrea)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.estado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.rut)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.digiver)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.hc)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.apellpat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.apellmat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nombres)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fechanac)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fechafall)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sexo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.estcivil)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.formapago)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.credencial)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.vigencia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.domicilio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.comuna)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.telefono)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.etnia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.contacto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nombrepad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nombremad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.observacion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.usmod)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fmod)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.uspago)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fpago)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nacionalidad)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>

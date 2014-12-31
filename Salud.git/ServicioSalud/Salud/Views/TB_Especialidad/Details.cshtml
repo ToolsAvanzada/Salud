@@ -1,0 +1,57 @@
+﻿@model Salud.Models.TB_Especialidad
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>TB_Especialidad</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.codactiv)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.codactiv)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.codusuario)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.codusuario)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.padre)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.padre)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.denominacion)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.denominacion)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.descripcion)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.descripcion)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.activo)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.activo)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id=Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

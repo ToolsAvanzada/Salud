@@ -1,0 +1,69 @@
+﻿@model IEnumerable<Salud.Models.TB_Signos>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Codigo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nrodau)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fechasigno)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.presion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tempaxilar)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.temprectal)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.pulso)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Codigo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nrodau)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fechasigno)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.presion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tempaxilar)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.temprectal)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.pulso)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,61 @@
+﻿@model Salud.Models.TB_Box
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>TB_Box</legend>
+
+        
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.box)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.box)
+            @Html.ValidationMessageFor(model => model.box)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.camilla)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.camilla)
+            @Html.ValidationMessageFor(model => model.camilla)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.estado)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.estado)
+            @Html.ValidationMessageFor(model => model.estado)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.dau)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.dau)
+            @Html.ValidationMessageFor(model => model.dau)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

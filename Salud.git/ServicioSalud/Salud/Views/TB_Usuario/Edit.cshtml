@@ -1,0 +1,69 @@
+﻿@model Salud.Models.TB_Usuario
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>TB_Usuario</legend>
+
+        @Html.HiddenFor(model => model.id)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.usr)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.usr)
+            @Html.ValidationMessageFor(model => model.usr)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.nombre)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.nombre)
+            @Html.ValidationMessageFor(model => model.nombre)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.pass)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.pass)
+            @Html.ValidationMessageFor(model => model.pass)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.tipo)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.tipo)
+            @Html.ValidationMessageFor(model => model.tipo)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.estado)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.estado)
+            @Html.ValidationMessageFor(model => model.estado)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

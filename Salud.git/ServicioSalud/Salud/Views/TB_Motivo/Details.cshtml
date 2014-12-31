@@ -1,0 +1,64 @@
+﻿@model Salud.Models.TB_Motivo
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>TB_Motivo</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.codigo)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.codigo)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.codusuario)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.codusuario)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.denominacion)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.denominacion)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.descripcion)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.descripcion)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.regadic)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.regadic)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.regpart)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.regpart)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.estado)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.estado)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id=Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

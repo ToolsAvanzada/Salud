@@ -1,0 +1,183 @@
+﻿@model IEnumerable<Salud.Models.TB_Atencion>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.codigo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.cp)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fp)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ndau)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.atensol)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.servsol)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.actisol)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.profsol)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fechalleg)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fechaper)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.motivo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.medio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.lugar)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ateneje)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.serveje)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.actieje)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.profeje)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.comentario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.anulado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.motanul)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.cierre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.uscrea)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fcrea)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.usmod)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fmod)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.consultorio)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.codigo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.cp)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fp)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ndau)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.atensol)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.servsol)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.actisol)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.profsol)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fechalleg)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fechaper)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.motivo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.medio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.lugar)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ateneje)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.serveje)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.actieje)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.profeje)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.comentario)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.anulado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.motanul)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.cierre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.uscrea)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fcrea)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.usmod)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fmod)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.consultorio)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>

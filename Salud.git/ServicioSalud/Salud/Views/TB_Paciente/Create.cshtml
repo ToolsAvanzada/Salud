@@ -1,0 +1,253 @@
+﻿@model Salud.Models.TB_Paciente
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>TB_Paciente</legend>
+
+        
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.fechacrea)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.fechacrea)
+            @Html.ValidationMessageFor(model => model.fechacrea)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.estado)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.estado)
+            @Html.ValidationMessageFor(model => model.estado)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.rut)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.rut)
+            @Html.ValidationMessageFor(model => model.rut)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.digiver)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.digiver)
+            @Html.ValidationMessageFor(model => model.digiver)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.hc)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.hc)
+            @Html.ValidationMessageFor(model => model.hc)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.apellpat)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.apellpat)
+            @Html.ValidationMessageFor(model => model.apellpat)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.apellmat)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.apellmat)
+            @Html.ValidationMessageFor(model => model.apellmat)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.nombres)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.nombres)
+            @Html.ValidationMessageFor(model => model.nombres)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.fechanac)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.fechanac)
+            @Html.ValidationMessageFor(model => model.fechanac)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.fechafall)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.fechafall)
+            @Html.ValidationMessageFor(model => model.fechafall)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.sexo)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.sexo)
+            @Html.ValidationMessageFor(model => model.sexo)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.estcivil)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.estcivil)
+            @Html.ValidationMessageFor(model => model.estcivil)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.formapago)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.formapago)
+            @Html.ValidationMessageFor(model => model.formapago)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.credencial)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.credencial)
+            @Html.ValidationMessageFor(model => model.credencial)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.vigencia)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.vigencia)
+            @Html.ValidationMessageFor(model => model.vigencia)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.domicilio)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.domicilio)
+            @Html.ValidationMessageFor(model => model.domicilio)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.comuna)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.comuna)
+            @Html.ValidationMessageFor(model => model.comuna)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.telefono)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.telefono)
+            @Html.ValidationMessageFor(model => model.telefono)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.etnia)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.etnia)
+            @Html.ValidationMessageFor(model => model.etnia)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.contacto)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.contacto)
+            @Html.ValidationMessageFor(model => model.contacto)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.nombrepad)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.nombrepad)
+            @Html.ValidationMessageFor(model => model.nombrepad)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.nombremad)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.nombremad)
+            @Html.ValidationMessageFor(model => model.nombremad)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.observacion)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.observacion)
+            @Html.ValidationMessageFor(model => model.observacion)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.usmod)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.usmod)
+            @Html.ValidationMessageFor(model => model.usmod)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.fmod)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.fmod)
+            @Html.ValidationMessageFor(model => model.fmod)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.uspago)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.uspago)
+            @Html.ValidationMessageFor(model => model.uspago)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.fpago)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.fpago)
+            @Html.ValidationMessageFor(model => model.fpago)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.nacionalidad)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.nacionalidad)
+            @Html.ValidationMessageFor(model => model.nacionalidad)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

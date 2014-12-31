@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SaludModelStoreContainer" CdmEntityContainer="SaludEntities">
+    <EntitySetMapping Name="TB_Atencion">
+      <EntityTypeMapping TypeName="SaludModel.TB_Atencion">
+        <MappingFragment StoreEntitySet="TB_Atencion">
+          <ScalarProperty Name="codigo" ColumnName="codigo" />
+          <ScalarProperty Name="cp" ColumnName="cp" />
+          <ScalarProperty Name="fp" ColumnName="fp" />
+          <ScalarProperty Name="ndau" ColumnName="ndau" />
+          <ScalarProperty Name="atensol" ColumnName="atensol" />
+          <ScalarProperty Name="servsol" ColumnName="servsol" />
+          <ScalarProperty Name="actisol" ColumnName="actisol" />
+          <ScalarProperty Name="profsol" ColumnName="profsol" />
+          <ScalarProperty Name="fechalleg" ColumnName="fechalleg" />
+          <ScalarProperty Name="fechaper" ColumnName="fechaper" />
+          <ScalarProperty Name="motivo" ColumnName="motivo" />
+          <ScalarProperty Name="medio" ColumnName="medio" />
+          <ScalarProperty Name="lugar" ColumnName="lugar" />
+          <ScalarProperty Name="ateneje" ColumnName="ateneje" />
+          <ScalarProperty Name="serveje" ColumnName="serveje" />
+          <ScalarProperty Name="actieje" ColumnName="actieje" />
+          <ScalarProperty Name="profeje" ColumnName="profeje" />
+          <ScalarProperty Name="comentario" ColumnName="comentario" />
+          <ScalarProperty Name="anulado" ColumnName="anulado" />
+          <ScalarProperty Name="motanul" ColumnName="motanul" />
+          <ScalarProperty Name="cierre" ColumnName="cierre" />
+          <ScalarProperty Name="uscrea" ColumnName="uscrea" />
+          <ScalarProperty Name="fcrea" ColumnName="fcrea" />
+          <ScalarProperty Name="usmod" ColumnName="usmod" />
+          <ScalarProperty Name="fmod" ColumnName="fmod" />
+          <ScalarProperty Name="consultorio" ColumnName="consultorio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_Box">
+      <EntityTypeMapping TypeName="SaludModel.TB_Box">
+        <MappingFragment StoreEntitySet="TB_Box">
+          <ScalarProperty Name="codigo" ColumnName="codigo" />
+          <ScalarProperty Name="box" ColumnName="box" />
+          <ScalarProperty Name="camilla" ColumnName="camilla" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="dau" ColumnName="dau" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_Comuna">
+      <EntityTypeMapping TypeName="SaludModel.TB_Comuna">
+        <MappingFragment StoreEntitySet="TB_Comuna">
+          <ScalarProperty Name="codigo" ColumnName="codigo" />
+          <ScalarProperty Name="codexterno" ColumnName="codexterno" />
+          <ScalarProperty Name="codusuario" ColumnName="codusuario" />
+          <ScalarProperty Name="denominacion" ColumnName="denominacion" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="tipo" ColumnName="tipo" />
+          <ScalarProperty Name="padre" ColumnName="padre" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_Condicion">
+      <EntityTypeMapping TypeName="SaludModel.TB_Condicion">
+        <MappingFragment StoreEntitySet="TB_Condicion">
+          <ScalarProperty Name="codigo" ColumnName="codigo" />
+          <ScalarProperty Name="codusuario" ColumnName="codusuario" />
+          <ScalarProperty Name="denominacion" ColumnName="denominacion" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_DatosMedicos">
+      <EntityTypeMapping TypeName="SaludModel.TB_DatosMedicos">
+        <MappingFragment StoreEntitySet="TB_DatosMedicos">
+          <ScalarProperty Name="codigo" ColumnName="codigo" />
+          <ScalarProperty Name="nrodau" ColumnName="nrodau" />
+          <ScalarProperty Name="cp" ColumnName="cp" />
+          <ScalarProperty Name="atencion" ColumnName="atencion" />
+          <ScalarProperty Name="coning1" ColumnName="coning1" />
+          <ScalarProperty Name="coning2" ColumnName="coning2" />
+          <ScalarProperty Name="pronostico" ColumnName="pronostico" />
+          <ScalarProperty Name="alcoholemia" ColumnName="alcoholemia" />
+          <ScalarProperty Name="fechaalc" ColumnName="fechaalc" />
+          <ScalarProperty Name="datoalc" ColumnName="datoalc" />
+          <ScalarProperty Name="destino" ColumnName="destino" />
+          <ScalarProperty Name="servdest" ColumnName="servdest" />
+          <ScalarProperty Name="ambulancia" ColumnName="ambulancia" />
+          <ScalarProperty Name="carabinero" ColumnName="carabinero" />
+          <ScalarProperty Name="placacarab" ColumnName="placacarab" />
+          <ScalarProperty Name="policlinico" ColumnName="policlinico" />
+          <ScalarProperty Name="diagpos1" ColumnName="diagpos1" />
+          <ScalarProperty Name="diagpos2" ColumnName="diagpos2" />
+          <ScalarProperty Name="perstratante" ColumnName="perstratante" />
+          <ScalarProperty Name="uscrea" ColumnName="uscrea" />
+          <ScalarProperty Name="fcrea" ColumnName="fcrea" />
+          <ScalarProperty Name="usmod" ColumnName="usmod" />
+          <ScalarProperty Name="fmod" ColumnName="fmod" />
+          <ScalarProperty Name="fsigno" ColumnName="fsigno" />
+          <ScalarProperty Name="color" ColumnName="color" />
+          <ScalarProperty Name="riesgo" ColumnName="riesgo" />
+          <ScalarProperty Name="indicaciones" ColumnName="indicaciones" />
+          <ScalarProperty Name="box" ColumnName="box" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_Diagnostico">
+      <EntityTypeMapping TypeName="SaludModel.TB_Diagnostico">
+        <MappingFragment StoreEntitySet="TB_Diagnostico">
+          <ScalarProperty Name="coddiag" ColumnName="coddiag" />
+          <ScalarProperty Name="codusuario" ColumnName="codusuario" />
+          <ScalarProperty Name="denominacion" ColumnName="denominacion" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="padre" ColumnName="padre" />
+          <ScalarProperty Name="agrupacion" ColumnName="agrupacion" />
+          <ScalarProperty Name="activo" ColumnName="activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_Especialidad">
+      <EntityTypeMapping TypeName="SaludModel.TB_Especialidad">
+        <MappingFragment StoreEntitySet="TB_Especialidad">
+          <ScalarProperty Name="codactiv" ColumnName="codactiv" />
+          <ScalarProperty Name="codusuario" ColumnName="codusuario" />
+          <ScalarProperty Name="padre" ColumnName="padre" />
+          <ScalarProperty Name="denominacion" ColumnName="denominacion" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="activo" ColumnName="activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_Fpago">
+      <EntityTypeMapping TypeName="SaludModel.TB_Fpago">
+        <MappingFragment StoreEntitySet="TB_Fpago">
+          <ScalarProperty Name="codigo" ColumnName="codigo" />
+          <ScalarProperty Name="codusuario" ColumnName="codusuario" />
+          <ScalarProperty Name="denominacion" ColumnName="denominacion" />
+          <ScalarProperty Name="tipo" ColumnName="tipo" />
+          <ScalarProperty Name="pagopac" ColumnName="pagopac" />
+          <ScalarProperty Name="pagopersona" ColumnName="pagopersona" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_Lugar">
+      <EntityTypeMapping TypeName="SaludModel.TB_Lugar">
+        <MappingFragment StoreEntitySet="TB_Lugar">
+          <ScalarProperty Name="codigo" ColumnName="codigo" />
+          <ScalarProperty Name="codusuario" ColumnName="codusuario" />
+          <ScalarProperty Name="denominacion" ColumnName="denominacion" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_MedioLlegada">
+      <EntityTypeMapping TypeName="SaludModel.TB_MedioLlegada">
+        <MappingFragment StoreEntitySet="TB_MedioLlegada">
+          <ScalarProperty Name="codigo" ColumnName="codigo" />
+          <ScalarProperty Name="codusuario" ColumnName="codusuario" />
+          <ScalarProperty Name="denominacion" ColumnName="denominacion" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_Motivo">
+      <EntityTypeMapping TypeName="SaludModel.TB_Motivo">
+        <MappingFragment StoreEntitySet="TB_Motivo">
+          <ScalarProperty Name="codigo" ColumnName="codigo" />
+          <ScalarProperty Name="codusuario" ColumnName="codusuario" />
+          <ScalarProperty Name="denominacion" ColumnName="denominacion" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="regadic" ColumnName="regadic" />
+          <ScalarProperty Name="regpart" ColumnName="regpart" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_MotivoAnula">
+      <EntityTypeMapping TypeName="SaludModel.TB_MotivoAnula">
+        <MappingFragment StoreEntitySet="TB_MotivoAnula">
+          <ScalarProperty Name="codigo" ColumnName="codigo" />
+          <ScalarProperty Name="codusuario" ColumnName="codusuario" />
+          <ScalarProperty Name="denominacion" ColumnName="denominacion" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_Paciente">
+      <EntityTypeMapping TypeName="SaludModel.TB_Paciente">
+        <MappingFragment StoreEntitySet="TB_Paciente">
+          <ScalarProperty Name="codpacie" ColumnName="codpacie" />
+          <ScalarProperty Name="fechacrea" ColumnName="fechacrea" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="rut" ColumnName="rut" />
+          <ScalarProperty Name="digiver" ColumnName="digiver" />
+          <ScalarProperty Name="hc" ColumnName="hc" />
+          <ScalarProperty Name="apellpat" ColumnName="apellpat" />
+          <ScalarProperty Name="apellmat" ColumnName="apellmat" />
+          <ScalarProperty Name="nombres" ColumnName="nombres" />
+          <ScalarProperty Name="fechanac" ColumnName="fechanac" />
+          <ScalarProperty Name="fechafall" ColumnName="fechafall" />
+          <ScalarProperty Name="sexo" ColumnName="sexo" />
+          <ScalarProperty Name="estcivil" ColumnName="estcivil" />
+          <ScalarProperty Name="formapago" ColumnName="formapago" />
+          <ScalarProperty Name="credencial" ColumnName="credencial" />
+          <ScalarProperty Name="vigencia" ColumnName="vigencia" />
+          <ScalarProperty Name="domicilio" ColumnName="domicilio" />
+          <ScalarProperty Name="comuna" ColumnName="comuna" />
+          <ScalarProperty Name="telefono" ColumnName="telefono" />
+          <ScalarProperty Name="etnia" ColumnName="etnia" />
+          <ScalarProperty Name="contacto" ColumnName="contacto" />
+          <ScalarProperty Name="nombrepad" ColumnName="nombrepad" />
+          <ScalarProperty Name="nombremad" ColumnName="nombremad" />
+          <ScalarProperty Name="observacion" ColumnName="observacion" />
+          <ScalarProperty Name="usmod" ColumnName="usmod" />
+          <ScalarProperty Name="fmod" ColumnName="fmod" />
+          <ScalarProperty Name="uspago" ColumnName="uspago" />
+          <ScalarProperty Name="fpago" ColumnName="fpago" />
+          <ScalarProperty Name="nacionalidad" ColumnName="nacionalidad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_Profesional">
+      <EntityTypeMapping TypeName="SaludModel.TB_Profesional">
+        <MappingFragment StoreEntitySet="TB_Profesional">
+          <ScalarProperty Name="codigo" ColumnName="codigo" />
+          <ScalarProperty Name="rut" ColumnName="rut" />
+          <ScalarProperty Name="codusuario" ColumnName="codusuario" />
+          <ScalarProperty Name="digitover" ColumnName="digitover" />
+          <ScalarProperty Name="apellpat" ColumnName="apellpat" />
+          <ScalarProperty Name="apellmat" ColumnName="apellmat" />
+          <ScalarProperty Name="nombres" ColumnName="nombres" />
+          <ScalarProperty Name="nombre2" ColumnName="nombre2" />
+          <ScalarProperty Name="tipo" ColumnName="tipo" />
+          <ScalarProperty Name="direccion" ColumnName="direccion" />
+          <ScalarProperty Name="comuna" ColumnName="comuna" />
+          <ScalarProperty Name="fono" ColumnName="fono" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="observacion" ColumnName="observacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_Servicio">
+      <EntityTypeMapping TypeName="SaludModel.TB_Servicio">
+        <MappingFragment StoreEntitySet="TB_Servicio">
+          <ScalarProperty Name="codservicio" ColumnName="codservicio" />
+          <ScalarProperty Name="codusuario" ColumnName="codusuario" />
+          <ScalarProperty Name="padre" ColumnName="padre" />
+          <ScalarProperty Name="denominacion" ColumnName="denominacion" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="servinst" ColumnName="servinst" />
+          <ScalarProperty Name="instexte" ColumnName="instexte" />
+          <ScalarProperty Name="lugar" ColumnName="lugar" />
+          <ScalarProperty Name="activo" ColumnName="activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_Signos">
+      <EntityTypeMapping TypeName="SaludModel.TB_Signos">
+        <MappingFragment StoreEntitySet="TB_Signos">
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="nrodau" ColumnName="nrodau" />
+          <ScalarProperty Name="fechasigno" ColumnName="fechasigno" />
+          <ScalarProperty Name="presion" ColumnName="presion" />
+          <ScalarProperty Name="tempaxilar" ColumnName="tempaxilar" />
+          <ScalarProperty Name="temprectal" ColumnName="temprectal" />
+          <ScalarProperty Name="pulso" ColumnName="pulso" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_Tipo">
+      <EntityTypeMapping TypeName="SaludModel.TB_Tipo">
+        <MappingFragment StoreEntitySet="TB_Tipo">
+          <ScalarProperty Name="codigo" ColumnName="codigo" />
+          <ScalarProperty Name="codusuario" ColumnName="codusuario" />
+          <ScalarProperty Name="denominacion" ColumnName="denominacion" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="super" ColumnName="super" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_Usuario">
+      <EntityTypeMapping TypeName="SaludModel.TB_Usuario">
+        <MappingFragment StoreEntitySet="TB_Usuario">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="usr" ColumnName="usr" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="pass" ColumnName="pass" />
+          <ScalarProperty Name="tipo" ColumnName="tipo" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

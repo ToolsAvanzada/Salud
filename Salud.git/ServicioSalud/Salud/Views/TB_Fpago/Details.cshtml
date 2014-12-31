@@ -1,0 +1,64 @@
+﻿@model Salud.Models.TB_Fpago
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>TB_Fpago</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.codigo)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.codigo)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.codusuario)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.codusuario)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.denominacion)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.denominacion)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.tipo)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.tipo)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.pagopac)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.pagopac)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.pagopersona)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.pagopersona)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.estado)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.estado)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id=Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Salud.BundleConfig" Collapsed="true">
+    <Position X="1.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Start\BundleConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Salud.FilterConfig" Collapsed="true">
+    <Position X="3.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>App_Start\FilterConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Salud.RouteConfig" Collapsed="true">
+    <Position X="6.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Start\RouteConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Salud.WebApiConfig" Collapsed="true">
+    <Position X="8.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Start\WebApiConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Salud.MvcApplication" Collapsed="true">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Global.asax.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Salud.Controllers.TB_AtencionController" Collapsed="true">
+    <Position X="3.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACARAACAAAAAAAAAAAEAAEACAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\TB_AtencionController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Salud.Models.SaludEntities" Collapsed="true">
+    <Position X="8.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAECAAkgwAAAAYAgBAAAAAAEAgAACAAAAEABRAAAAg=</HashCode>
+      <FileName>Models\Model1.Context.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Salud.Models.TB_Atencion" Collapsed="true">
+    <Position X="1.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAFIggsggIAABcAgBQAiIhgiEgAAGAAIJECBBAAAAA=</HashCode>
+      <FileName>Models\TB_Atencion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Salud.Models.TB_Box" Collapsed="true">
+    <Position X="5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAhCAAAAAAAAAQAgABAAgAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\TB_Box.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Salud.Models.TB_Comuna" Collapsed="true">
+    <Position X="6.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABDAAQAAAAAAAAAAEAAAAAAAAAAIAAAAEABAAAEAA=</HashCode>
+      <FileName>Models\TB_Comuna.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Salud.Models.TB_Condicion" Collapsed="true">
+    <Position X="10.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABCAAQAAAAAAQgAAEAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Models\TB_Condicion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Salud.Models.TB_DatosMedicos" Collapsed="true">
+    <Position X="1.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAFCAgAghqgACAAgDAGggIAgAgACAKgRIFCJBAAAAI=</HashCode>
+      <FileName>Models\TB_DatosMedicos.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Salud.Models.TB_Diagnostico" Collapsed="true">
+    <Position X="3.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAQgAAEAIAAAAAAAEAAAAAEAIAAAEAA=</HashCode>
+      <FileName>Models\TB_Diagnostico.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Salud.Models.TB_Especialidad" Collapsed="true">
+    <Position X="5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAgAEAAAAAAAAAAIAAAAEAIAAAEAA=</HashCode>
+      <FileName>Models\TB_Especialidad.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Salud.Models.TB_Fpago" Collapsed="true">
+    <Position X="6.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABDAAQAAAIAAAAAAAAAAAAABAAAAAAAAEABAAAAAA=</HashCode>
+      <FileName>Models\TB_Fpago.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Salud.Models.TB_Lugar" Collapsed="true">
+    <Position X="8.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABCAAQAAAAAAAAgAEAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Models\TB_Lugar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Salud.Models.TB_MedioLlegada" Collapsed="true">
+    <Position X="1.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABCAAQAAAAAAAAgAEAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Models\TB_MedioLlegada.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Salud.Models.TB_Motivo" Collapsed="true">
+    <Position X="3.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABCAAQAAAAAAAAgAEAAAAAAAAAAwAAAAEAAAAAAAA=</HashCode>
+      <FileName>Models\TB_Motivo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Salud.Models.TB_MotivoAnula" Collapsed="true">
+    <Position X="5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABCAAQAAAAAAAAgAEAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Models\TB_MotivoAnula.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Salud.Models.TB_Paciente" Collapsed="true">
+    <Position X="6.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAwgiggAAAKQCEQAgAAABiBgEAAgABAAQAECEQAAgAo=</HashCode>
+      <FileName>Models\TB_Paciente.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Salud.Models.TB_Profesional" Collapsed="true">
+    <Position X="8.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABDgAQAQAAIEYAgAAAAABAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Models\TB_Profesional.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Salud.Models.TB_Servicio" Collapsed="true">
+    <Position X="1.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQgAAAAAQggAEAIABAAAAAAAAAAAEAMAAAEAA=</HashCode>
+      <FileName>Models\TB_Servicio.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Salud.Models.TB_Signos" Collapsed="true">
+    <Position X="3.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAUAAEAAAggAAAAAAAAAAAAAgAAAAAAAIAAA=</HashCode>
+      <FileName>Models\TB_Signos.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Salud.Models.TB_Tipo" Collapsed="true">
+    <Position X="5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAFCAgQAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Models\TB_Tipo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Salud.Models.TB_Usuario" Collapsed="true">
+    <Position X="6.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAADAAAAAAAAASkgAAAAAAAAAAAAAAABAAABAAAAgA=</HashCode>
+      <FileName>Models\TB_Usuario.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Salud.Controllers.TB_BoxController" Collapsed="true">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACARAACAAAAAAAAAAAEAAEACAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\TB_BoxController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Salud.Controllers.TB_ComunaController" Collapsed="true">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACARAACAAAAAAAAAAAEAAEACAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\TB_ComunaController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Salud.Controllers.TB_CondicionController" Collapsed="true">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACARAACAAAAAAAAAAAEAAEACAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\TB_CondicionController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Salud.Controllers.TB_DatosMedicosController" Collapsed="true">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACARAACAAAAAAAAAAAEAAEACAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\TB_DatosMedicosController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Salud.Controllers.TB_DiagnosticoController" Collapsed="true">
+    <Position X="10.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACARAACAAAAAAAAAAAEAAEACAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\TB_DiagnosticoController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Salud.Controllers.TB_EspecialidadController" Collapsed="true">
+    <Position X="1.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACARAACAAAAAAAAAAAEAAEACAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\TB_EspecialidadController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Salud.Controllers.TB_FpagoController" Collapsed="true">
+    <Position X="3.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACARAACAAAAAAAAAAAEAAEACAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\TB_FpagoController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Salud.Controllers.TB_LugarController" Collapsed="true">
+    <Position X="5.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACARAACAAAAAAAAAAAEAAEACAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\TB_LugarController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Salud.Controllers.TB_MedioLlegadaController" Collapsed="true">
+    <Position X="7" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACARAACAAAAAAAAAAAEAAEACAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\TB_MedioLlegadaController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Salud.Controllers.TB_MotivoAnulaController" Collapsed="true">
+    <Position X="8.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACARAACAAAAAAAAAAAEAAEACAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\TB_MotivoAnulaController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Salud.Controllers.TB_MotivoController" Collapsed="true">
+    <Position X="1.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACARAACAAAAAAAAAAAEAAEACAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\TB_MotivoController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Salud.Controllers.TB_PacienteController" Collapsed="true">
+    <Position X="3.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACARAACAAAAAAAAAAAEAAEACAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\TB_PacienteController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Salud.Controllers.TB_ProfesionalController" Collapsed="true">
+    <Position X="5.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACARAACAAAAAAAAAAAEAAEACAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\TB_ProfesionalController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Salud.Controllers.TB_ServicioController" Collapsed="true">
+    <Position X="7" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACARAACAAAAAAAAAAAEAAEACAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\TB_ServicioController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Salud.Controllers.TB_SignosController" Collapsed="true">
+    <Position X="10.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACARAACAAAAAAAAAAAEAAEACAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\TB_SignosController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Salud.Controllers.TB_TipoController" Collapsed="true">
+    <Position X="1.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACARAACAAAAAAAAAAAEAAEACAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\TB_TipoController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Salud.Controllers.TB_UsuarioController" Collapsed="true">
+    <Position X="3.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACARAACAAAAAAAAAAAEAAEACAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\TB_UsuarioController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

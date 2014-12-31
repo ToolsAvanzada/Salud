@@ -1,0 +1,77 @@
+﻿@model Salud.Models.TB_Fpago
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>TB_Fpago</legend>
+
+       
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.codusuario)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.codusuario)
+            @Html.ValidationMessageFor(model => model.codusuario)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.denominacion)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.denominacion)
+            @Html.ValidationMessageFor(model => model.denominacion)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.tipo)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.tipo)
+            @Html.ValidationMessageFor(model => model.tipo)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.pagopac)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.pagopac)
+            @Html.ValidationMessageFor(model => model.pagopac)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.pagopersona)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.pagopersona)
+            @Html.ValidationMessageFor(model => model.pagopersona)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.estado)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.estado)
+            @Html.ValidationMessageFor(model => model.estado)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

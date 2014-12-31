@@ -1,0 +1,195 @@
+﻿@model IEnumerable<Salud.Models.TB_DatosMedicos>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.codigo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TB_Atencion.comentario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TB_Paciente.digiver)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.atencion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TB_Condicion.codusuario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TB_Condicion1.codusuario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.pronostico)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.alcoholemia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fechaalc)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.datoalc)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.destino)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TB_Servicio.codusuario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ambulancia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.carabinero)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.placacarab)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TB_Servicio1.codusuario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TB_Diagnostico.codusuario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TB_Diagnostico1.codusuario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TB_Profesional.codusuario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TB_Usuario.usr)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fcrea)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TB_Usuario1.usr)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fmod)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fsigno)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.color)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.riesgo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.indicaciones)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TB_Box.box)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.codigo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TB_Atencion.comentario)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TB_Paciente.digiver)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.atencion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TB_Condicion.codusuario)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TB_Condicion1.codusuario)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.pronostico)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.alcoholemia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fechaalc)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.datoalc)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.destino)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TB_Servicio.codusuario)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ambulancia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.carabinero)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.placacarab)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TB_Servicio1.codusuario)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TB_Diagnostico.codusuario)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TB_Diagnostico1.codusuario)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TB_Profesional.codusuario)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TB_Usuario.usr)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fcrea)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TB_Usuario1.usr)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fmod)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fsigno)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.color)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.riesgo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.indicaciones)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TB_Box.box)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,211 @@
+﻿@model Salud.Models.TB_DatosMedicos
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>TB_DatosMedicos</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.codigo)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.codigo)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.TB_Atencion.comentario)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TB_Atencion.comentario)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.TB_Paciente.digiver)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TB_Paciente.digiver)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.atencion)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.atencion)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.TB_Condicion.codusuario)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TB_Condicion.codusuario)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.TB_Condicion1.codusuario)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TB_Condicion1.codusuario)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.pronostico)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.pronostico)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.alcoholemia)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.alcoholemia)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.fechaalc)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.fechaalc)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.datoalc)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.datoalc)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.destino)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.destino)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.TB_Servicio.codusuario)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TB_Servicio.codusuario)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ambulancia)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ambulancia)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.carabinero)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.carabinero)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.placacarab)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.placacarab)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.TB_Servicio1.codusuario)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TB_Servicio1.codusuario)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.TB_Diagnostico.codusuario)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TB_Diagnostico.codusuario)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.TB_Diagnostico1.codusuario)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TB_Diagnostico1.codusuario)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.TB_Profesional.codusuario)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TB_Profesional.codusuario)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.TB_Usuario.usr)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TB_Usuario.usr)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.fcrea)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.fcrea)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.TB_Usuario1.usr)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TB_Usuario1.usr)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.fmod)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.fmod)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.fsigno)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.fsigno)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.color)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.color)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.riesgo)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.riesgo)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.indicaciones)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.indicaciones)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.TB_Box.box)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TB_Box.box)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id=Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

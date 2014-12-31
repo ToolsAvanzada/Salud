@@ -1,0 +1,244 @@
+﻿@model Salud.Models.TB_DatosMedicos
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>TB_DatosMedicos</legend>
+
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.nrodau, "TB_Atencion")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("nrodau", String.Empty)
+            @Html.ValidationMessageFor(model => model.nrodau)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.cp, "TB_Paciente")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("cp", String.Empty)
+            @Html.ValidationMessageFor(model => model.cp)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.atencion)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.atencion)
+            @Html.ValidationMessageFor(model => model.atencion)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.coning1, "TB_Condicion")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("coning1", String.Empty)
+            @Html.ValidationMessageFor(model => model.coning1)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.coning2, "TB_Condicion1")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("coning2", String.Empty)
+            @Html.ValidationMessageFor(model => model.coning2)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.pronostico)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.pronostico)
+            @Html.ValidationMessageFor(model => model.pronostico)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.alcoholemia)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.alcoholemia)
+            @Html.ValidationMessageFor(model => model.alcoholemia)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.fechaalc)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.fechaalc)
+            @Html.ValidationMessageFor(model => model.fechaalc)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.datoalc)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.datoalc)
+            @Html.ValidationMessageFor(model => model.datoalc)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.destino)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.destino)
+            @Html.ValidationMessageFor(model => model.destino)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.servdest, "TB_Servicio")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("servdest", String.Empty)
+            @Html.ValidationMessageFor(model => model.servdest)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ambulancia)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ambulancia)
+            @Html.ValidationMessageFor(model => model.ambulancia)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.carabinero)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.carabinero)
+            @Html.ValidationMessageFor(model => model.carabinero)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.placacarab)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.placacarab)
+            @Html.ValidationMessageFor(model => model.placacarab)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.policlinico, "TB_Servicio1")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("policlinico", String.Empty)
+            @Html.ValidationMessageFor(model => model.policlinico)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.diagpos1, "TB_Diagnostico")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("diagpos1", String.Empty)
+            @Html.ValidationMessageFor(model => model.diagpos1)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.diagpos2, "TB_Diagnostico1")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("diagpos2", String.Empty)
+            @Html.ValidationMessageFor(model => model.diagpos2)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.perstratante, "TB_Profesional")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("perstratante", String.Empty)
+            @Html.ValidationMessageFor(model => model.perstratante)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.uscrea, "TB_Usuario")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("uscrea", String.Empty)
+            @Html.ValidationMessageFor(model => model.uscrea)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.fcrea)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.fcrea)
+            @Html.ValidationMessageFor(model => model.fcrea)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.usmod, "TB_Usuario1")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("usmod", String.Empty)
+            @Html.ValidationMessageFor(model => model.usmod)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.fmod)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.fmod)
+            @Html.ValidationMessageFor(model => model.fmod)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.fsigno)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.fsigno)
+            @Html.ValidationMessageFor(model => model.fsigno)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.color)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.color)
+            @Html.ValidationMessageFor(model => model.color)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.riesgo)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.riesgo)
+            @Html.ValidationMessageFor(model => model.riesgo)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.indicaciones)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.indicaciones)
+            @Html.ValidationMessageFor(model => model.indicaciones)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.box, "TB_Box")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("box", String.Empty)
+            @Html.ValidationMessageFor(model => model.box)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
